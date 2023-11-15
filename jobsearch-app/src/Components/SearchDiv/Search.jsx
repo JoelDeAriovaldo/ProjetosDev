@@ -40,6 +40,44 @@ const Search = () => {
 
         </div>
       </form>
+
+      <div className="secDiv flex items-center gap-10 justify-center">
+
+        <div className="singleSearch flex items-center gap-2">
+          <label htmlFor="relevance" className='text-[#808080] font-semibold'>Ordenar por:</label>
+
+          <select name="" id="relevance" className="bg-white rounded-[3px] px-4 py-1">
+            <option value="">Relevância</option>
+            <option value="">Inclusive</option>
+            <option value="">Começa com</option>
+            <option value="">Contém</option>
+          </select>
+        </div>
+
+        <div className="singleSearch flex items-center gap-2">
+          <label htmlFor="type" className='text-[#808080] font-semibold'>Tipo:</label>
+
+          <select name="" id="type" className="bg-white rounded-[3px] px-4 py-1">
+            <option value="">Tempo Integral</option>
+            <option value="">Remote</option>
+            <option value="">Contrato</option>
+            <option value="">Tempo Prcial</option>
+          </select>
+        </div>
+
+        <div className="singleSearch flex items-center gap-2">
+          <label htmlFor="level" className='text-[#808080] font-semibold'>Nível</label>
+
+          <select name="" id="level" className="bg-white rounded-[3px] px-4 py-1">
+            <option value="">Senior</option>
+            <option value="">Principiante</option>
+            <option value="">intermediário</option>
+          </select>
+        </div>
+
+        <span className='text-[#a1a1a1] cursor-pointer '>limpar tudo</span>
+      </div>
+
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Accordion,
   AccordionItem,
@@ -7,6 +6,8 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "./forecast.css";
+
+
 
 const WEEK_DAYS = [
   "Segunda",
@@ -17,7 +18,8 @@ const WEEK_DAYS = [
   "Sábado",
   "Domingo",
 ];
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const Forecast = ({ data }) => {
   const dayInAWeek = new Date().getDay();
   const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(
@@ -28,6 +30,8 @@ const Forecast = ({ data }) => {
     <>
       <label className="title">Diário</label>
       <Accordion allowZeroExpanded>
+      {/* // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore */}
         {data.list.splice(0, 7).map((item, idx) => (
           <AccordionItem key={idx}>
             <AccordionItemHeading>
