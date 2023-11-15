@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Accordion,
   AccordionItem,
@@ -18,7 +17,7 @@ const WEEK_DAYS = [
   "Domingo",
 ];
 
-const Forecast = ({ data }) => {
+const Forecast = ({ data: any }) => {
   const dayInAWeek = new Date().getDay();
   const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(
     WEEK_DAYS.slice(0, dayInAWeek)
@@ -28,7 +27,7 @@ const Forecast = ({ data }) => {
     <>
       <label className="title">Diário</label>
       <Accordion allowZeroExpanded>
-        {data.list.splice(0, 7).map((item, idx) => (
+        {data.list.splice(0, 7).map((item: any, idx: any) => (
           <AccordionItem key={idx}>
             <AccordionItemHeading>
               <AccordionItemButton>
