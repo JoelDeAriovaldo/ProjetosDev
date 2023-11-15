@@ -40,3 +40,7 @@ const Search = ({ onSearchChange: any }) => {
 };
 
 export default Search;
+function onSearchChange(searchData: any) {
+  throw new Error("Function not implemented.");
+}
+
