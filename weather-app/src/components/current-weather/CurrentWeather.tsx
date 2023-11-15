@@ -1,6 +1,7 @@
+import React from "react";
 import "./current-weather.css";
 
-const CurrentWeather = ({ data: any }) => {
+const CurrentWeather = ({ data }) => {
   return (
     <div className="weather">
       <div className="top">
