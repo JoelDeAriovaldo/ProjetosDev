@@ -9,7 +9,7 @@ function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
 
-  const handleOnSearchChange = (searchData) => {
+  const handleOnSearchChange = (searchData: any) => {
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = fetch(
